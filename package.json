@@ -1,0 +1,50 @@
+{
+  "name": "hstone-app",
+  "version": "1.0.0",
+  "description": "Cool Hearthstone App!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "lint": "lynt --typescript --react",
+    "build": "parcel build index.html"
+  },
+  "author": "Alex Macavei",
+  "license": "ISC",
+  "dependencies": {
+    "mobx": "^5.10.1",
+    "mobx-preact": "^3.0.0",
+    "preact": "^8.4.2",
+    "preact-router": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "lynt": "^0.5.5",
+    "parcel-bundler": "^1.12.3",
+    "preact-material-components": "^1.5.8",
+    "prettier": "1.18.2",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "jsxBracketSameLine": true,
+    "jsxSingleQuote": true,
+    "printWidth": 120
+  }
+}
